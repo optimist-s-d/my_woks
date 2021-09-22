@@ -4,7 +4,7 @@ export default function trim(text, maxLength) {
         throw new RangeError("enter valid number");
     }
     if (text.length > maxLength) {
-        return `${`${text.substr(0, maxLength - 1)}\u2026`}`;
+        return `${text.substr(0, maxLength - 1)`\u2026`}`;
     }
     return text;
 }
